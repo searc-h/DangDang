@@ -1,4 +1,4 @@
-## 重写push,replace方法
+#### 重写push,replace方法
 ```
 // 重写push 与 replace方法
 let originPush = VueRouter.prototype.push; // 备份原型上的push方法,但是此时的originPush的this 不再是指向VueRouter.prototype
@@ -25,7 +25,7 @@ VueRouter.prototype.replace = function(location , resolve , reject){
 ```
 
 
-## store的模块化开发
+#### store的模块化开发
 ```
 import Vuex from 'vuex'
 import Vue from 'vue'
@@ -41,7 +41,7 @@ export default new Vuex.Store({
 })
 ```
 
-## 锚点跳转实现 以及 解决如何阻止url改变问题
+#### 锚点跳转实现 以及 解决如何阻止url改变问题
 ```
     methods:{
         To(){
@@ -76,7 +76,7 @@ export default new Vuex.Store({
         },
 ```
 
-## 图片懒加载
+#### 图片懒加载
 ```
 // 图片懒加载插件引入
 import VueLazyload from 'vue-lazyload'
@@ -88,14 +88,14 @@ Vue.use(VueLazyload,{
 
 ```
 
-## 解决登陆、注册在同一个组件中的问题
+#### 解决登陆、注册在同一个组件中的问题
 ```
 v-if login
 v-else regiser
 ```
 
 
-## 解决input框获得焦点与失去焦点时，label标签的过渡效果
+#### 解决input框获得焦点与失去焦点时，label标签的过渡效果
 ```
     
     <div @click="handleZoomT" >
@@ -133,7 +133,7 @@ v-else regiser
 
 ```
 
-## 购物车数量修改的节流操作
+#### 购物车数量修改的节流操作
 ```
     let _ = require('lodash')   
     addCount: _.throttle(function({itemid}){
@@ -167,7 +167,7 @@ v-else regiser
     
 ```
 
-## 购物车勾选逻辑实现
+#### 购物车勾选逻辑实现
 ```
     <div class="funtions">
         <div class="check">
@@ -198,7 +198,7 @@ v-else regiser
         调用全选接口实现
 ```
 
-## 批量删除逻辑(Promise.all)
+#### 批量删除逻辑(Promise.all)
 ```
     async deleteAllChecked(context,itemList){
         let promiseArr = []
@@ -216,18 +216,18 @@ v-else regiser
     }
 ```
 
-## 下载依赖
+#### 下载依赖
 ```
 npm install
 ```
 
 
-## 启动项目
+#### 启动项目
 ```
 npm run serve 
 默认8080端口
 ```
 
 
-## 配置代理
+#### 配置代理
 
